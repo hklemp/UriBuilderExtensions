@@ -5,12 +5,14 @@ using Microsoft.AspNetCore.WebUtilities;
 
 namespace UriBuilderExtension
 {
+	/// <summary>
+	/// Extension for the .net UriBuilder to simply extend the query
+    /// </summary>
 	public static class UriBuilderExtensions
     {
 
         /// <summary>
         /// Sets the specified query parameter key-value pair of the URI.
-        /// If the key already exists, the value is overwritten.
         /// </summary>
         public static UriBuilder SetQueryParam(this UriBuilder uri, string key, Microsoft.Extensions.Primitives.StringValues value)
         {
