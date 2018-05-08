@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ReleaseVersion>0.1.0</ReleaseVersion>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.1.0</PackageVersion>
+    <Authors>Hendrik Klemp</Authors>
+    <PackageLicenseUrl>https://github.com/hklemp/UriBuilderExtensions/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>Hendrik Klemp</Owners>
+    <PackageProjectUrl>https://github.com/hklemp/UriBuilderExtensions</PackageProjectUrl>
+    <PackageTags>UriBuilder Query UriBuilderQuery</PackageTags>
+    <Title>UriBuilderExtension</Title>
+    <Description>Extension for the .net UriBuilder to simply extend the query</Description>
+    <PackageId>UriBuilderExtension</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DocumentationFile>bin\Release\netstandard2.0\UriBuilderExtension.xml</DocumentationFile>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>BeforeBuild</type>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.0.2" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+</Project>
