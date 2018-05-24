@@ -1,2 +1,6 @@
 language: csharp
 solution: UriExtension/UriBuilderExtension.csproj
+mono: none
+dotnet: 2.1.200
+script:
+ - dotnet restore
