@@ -1,7 +1,6 @@
 # UriBuilderExtensions
 
 [![NuGet version (UriBuilderExtension)](https://img.shields.io/nuget/v/UriBuilderExtension.svg?style=flat-square)](https://www.nuget.org/packages/UriBuilderExtension/)
-
 [![Build Status](https://travis-ci.org/hklemp/UriBuilderExtensions.svg?branch=master)](https://travis-ci.org/hklemp/UriBuilderExtensions)
 
 Extension for the .net UriBuilder to simply extend the query
